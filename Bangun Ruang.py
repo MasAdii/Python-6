@@ -122,7 +122,7 @@ def luas_pesegiPanjang():
     Input_user_lebar = int(input('Masukkan lebar persegi panjang>> '))
     hasil = Input_user_panjang + Input_user_lebar
     print('\n L.persegi panjang= panjang x lebar')
-    print(f'          = {Input_user_panjang} + {Input_user_lebar}')
+    print(f'          = {Input_user_panjang} * {Input_user_lebar}')
     print(f'          = {hasil} cm²')
     return hasil
 
@@ -209,8 +209,7 @@ def banner():
             case 5:
                 segitiga()
             case 6:
-                break
-            case _:
                 print('Terima kasih sudah berkunjung, silahkan mencoba lagi!!!')
+                break
 
 banner()
