@@ -213,4 +213,4 @@ def banner():
                 break
 
 banner()
-#disalin dlu lalu jalanin di vscode, compiler, atau lewat terminal. Terima Kasih
+#disalin dlu lalu jalanin di vscode, compiler, atau lewat git clone lalu jalankan di terminal. Terima Kasih
