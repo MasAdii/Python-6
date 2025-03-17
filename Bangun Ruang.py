@@ -2,21 +2,25 @@ def luas_persegi():
     print('(!)Rumus luas persegi: sisi x sisi')
     Input_user = int(input('Masukkan sisi>> '))
     hasil = 2 * Input_user
-    print(f'Hasil: {hasil} cm²')
+    print('\n L.persegi= sisi x sisi')
+    print(f'          = {Input_user} x {Input_user}')
+    print(f'          = {hasil} cm²')
     return hasil
 
 def volume_persegi():
     print('(!)Rumus volume persegi: sisi x sisi x sisi') 
     Input_user = int(input('Masukkan sisi persegi>> '))
     hasil = Input_user ** 3
-    print(f'Hasil: {hasil} cm³')
+    print('\n V.persegi= sisi x sisi x sisi')
+    print(f'          = {Input_user} x {Input_user} x {Input_user}')
+    print(f'          = {hasil} cm³')
     return hasil
 
 def persegi():
     print('\n========================')
     print('         PERSEGI        ')
     print('========================\n')
-    print('1.Luas')
+    print('1.Luas persegi')
     print('2.Volume persegi')
     print('3.keluar')
     Input_ussr = int(input('Masukkan pilihan>> '))
@@ -30,17 +34,21 @@ def persegi():
         print("(!)Input yang anda masukkan tidak valid!!!")
 
 def luas_kubus():
-    print('Rumus luas kubus = 6 x s²')
+    print('(!)Rumus luas kubus = 6 x s²')
     Input_user = int(input('Masukkan sisi kubus>> '))
     hasil = 6 * Input_user * Input_user
-    print(f'Hasil: {hasil} cm²')
+    print('\n L.kubus= 6 x s²')
+    print(f'          = 6 x {Input_user} x {Input_user}')
+    print(f'          = {hasil} cm²')
     return hasil
 
 def volume_kubus():
-    print('Rumus volume kubus = s³')
+    print('(!)Rumus volume kubus = s³')
     Input_user = int(input('Masukkan sisi kubus>> '))
     hasil =  Input_user ** 3
-    print(f'Hasil: {hasil} cm³')
+    print('\n V.kubus= s x s x s')
+    print(f'          = {Input_user} x {Input_user} x {Input_user}')
+    print(f'          = {hasil} cm³')
     return hasil
 
 def kubus():
@@ -64,13 +72,19 @@ def keliling_lingkaran():
     print('(!)Rumus keliling lingkaran: 2 x π x r')
     Input_user = int(input('Masukkan jari-jari lingkaran>> '))
     hasil = 2 * 3.14 * Input_user
-    print(f'Hasil: {hasil} cm')
+    print('\n K.lingkaran= 2 x π x r')
+    print(f'          = 2 x {3.14} x {Input_user}')
+    print(f'          = {hasil} cm')
+    return hasil
 
 def luas_lingkaran():
     print('(!)Rumus luas lingkaran: π x r x r')
     Input_user = int(input('Masukkan jari-jari lingkaran>> '))
     hasil = 3.14 * Input_user * Input_user
-    print(f'Hasil: {hasil} cm²')
+    print('\n L.lingkaran= π x r x r')
+    print(f'          = 3.14 x {Input_user} x {Input_user}')
+    print(f'          = {hasil} cm²')
+    return hasil
 
 def lingkaran():
     print('\n========================')
@@ -94,7 +108,9 @@ def keliling_persegiPanjang():
     Input_user_panjang = int(input('Masukkan panjang persegi panjang>> '))
     Input_user_lebar = int(input('Masukkan lebar persegi panjang>> '))
     hasil = 2 * (Input_user_panjang + Input_user_lebar)
-    print(f'Hasil: {hasil} cm')
+    print('\n K.persegi panjang= 2 x (panjang + lebar)')
+    print(f'          = 2x ({Input_user_panjang} + {Input_user_lebar})')
+    print(f'          = {hasil} cm')
     return hasil
 
 def luas_pesegiPanjang():
@@ -102,7 +118,9 @@ def luas_pesegiPanjang():
     Input_user_panjang = int(input('Masukkan panjang persegi panjang>> '))
     Input_user_lebar = int(input('Masukkan lebar persegi panjang>> '))
     hasil = Input_user_panjang + Input_user_lebar
-    print(f'Hasil: {hasil} cm²')
+    print('\n L.persegi panjang= panjang x lebar')
+    print(f'          = {Input_user_panjang} + {Input_user_lebar}')
+    print(f'          = {hasil} cm²')
     return hasil
 
 def persegi_panjang():
@@ -128,14 +146,18 @@ def keliling_segitiga():
     Input_user_b = int(input('Masukkan b>> '))  
     Input_user_c = int(input('Masukkan c>> '))
     hasil = Input_user_a + Input_user_b + Input_user_c
-    print(f'Hasil: {hasil} cm')
+    print('\n K.segitiga= a + b + c')
+    print(f'          = {Input_user_a} + {Input_user_b} + {Input_user_c}')
+    print(f'          = {hasil} cm')
     return hasil
 
 def luas_segitiga():
     print('(!)Rumus luas segitiga: 1/2 x a')
     Input_user_a = int(input('Masukkan a>>'))
     hasil = 1/2 * Input_user_a
-    print(f'Hasil: {hasil} cm³')
+    print('\n L.persegi panjang= 1/2 x a')
+    print(f'          = 1/2 x {Input_user_a}')
+    print(f'          = {hasil} cm²')
     return hasil
 
 def segitiga():
