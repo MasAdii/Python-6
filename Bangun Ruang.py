@@ -1,21 +1,35 @@
+import time
+import sys
+
+def typing(text, delay):
+    for char in text:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(delay)
+    print()
+
 def luas_persegi():
     print('(!)Rumus luas persegi = sisi x sisi')
     Input_user = int(input('Masukkan sisi>> '))
     hasil = Input_user ** 2
-    print('\n L.persegi = sisi x sisi')
-    print(f'           = {Input_user} x {Input_user}')
-    print(f'           = {hasil} cm²')
-    print(f'           = Jadi luas persegi adalah {hasil} cm²')
+    print('Menghitung.....')
+    time.sleep(1.3)
+    typing('\n L.persegi = sisi x sisi', delay=.06)
+    typing(f'           = {Input_user} x {Input_user}',delay=.06)
+    typing(f'           = {hasil} cm²', delay=.06)
+    typing(f'           = Jadi luas persegi adalah {hasil} cm²', delay=.06)
     return hasil
 
 def volume_persegi():
     print('(!)Rumus volume persegi = sisi x sisi x sisi') 
     Input_user = int(input('Masukkan sisi persegi>> '))
     hasil = Input_user ** 3
-    print('\n V.persegi = sisi x sisi x sisi')
-    print(f'           = {Input_user} x {Input_user} x {Input_user}')
-    print(f'           = {hasil} cm³')
-    print(f'           = Jadi volume persegi adalah {hasil} cm³')
+    print('Menghitung.....')
+    time.sleep(1.3)
+    typing('\n V.persegi = sisi x sisi x sisi', delay=.06)
+    typing(f'           = {Input_user} x {Input_user} x {Input_user}', delay=.06)
+    typing(f'           = {hasil} cm³',delay=.06)
+    typing(f'           = Jadi volume persegi adalah {hasil} cm³', delay=.06)
     return hasil
 
 def persegi():
@@ -37,23 +51,27 @@ def persegi():
         print("(!)Input yang anda masukkan tidak valid!!!")
 
 def luas_kubus():
-    print('(!)Rumus luas kubus = 6 x s²')
+    print('(!)Rumus luas kubus = 6 x sisi²')
     Input_user = int(input('Masukkan sisi kubus>> '))
     hasil = 6 * Input_user * Input_user
-    print('\n L.kubus = 6 x s²')
-    print(f'           = 6 x {Input_user} x {Input_user}')
-    print(f'           = {hasil} cm²')
-    print(f'           = Jadi luas kubus adalah {hasil} cm²')
+    print('Menghitung.....')
+    time.sleep(1.3)
+    typing('\n L.kubus = 6 x s x s', delay=.06)
+    typing(f'           = 6 x {Input_user} x {Input_user}',delay=.06)
+    typing(f'           = {hasil} cm²', delay=.06)
+    typing(f'           = Jadi luas kubus adalah {hasil} cm²', delay=.06)
     return hasil
 
 def volume_kubus():
     print('(!)Rumus volume kubus = s³')
     Input_user = int(input('Masukkan sisi kubus>> '))
     hasil =  Input_user ** 3
-    print('\n V.kubus = s x s x s')
-    print(f'           = {Input_user} x {Input_user} x {Input_user}')
-    print(f'           = {hasil} cm³')
-    print(f'           = Jadi volume kubus adalah {hasil} cm³')
+    print('Menghitung.....')
+    time.sleep(1.3)
+    typing('\n V.kubus = sisi x sisi x sisi', delay=.06)
+    typing(f'           = {Input_user} x {Input_user} x {Input_user}', delay=.06)
+    typing(f'           = {hasil} cm³',delay=.06)
+    typing(f'           = Jadi volume kubus adalah {hasil} cm³', delay=.06)
     return hasil
 
 def kubus():
@@ -78,20 +96,24 @@ def keliling_lingkaran():
     print('(!)Rumus keliling lingkaran: 2 x π x r')
     Input_user = int(input('Masukkan jari-jari lingkaran>> '))
     hasil = 2 * 3.14 * Input_user
-    print('\n K.lingkaran = 2 x π x r')
-    print(f'           = 2 x {3.14} x {Input_user}')
-    print(f'           = {hasil} cm')
-    print(f'           = Jadi keliling lingkaran adalah {hasil} cm')
+    print('Menghitung.....')
+    time.sleep(1.3)
+    typing('\n K.lingkaran = 2 x π x r', delay=.06)
+    typing(f'             = 2 x {3.14} x {Input_user}', delay=.06)
+    typing(f'             = {hasil} cm',delay=.06)
+    typing(f'             = Jadi keliling lingkaran adalah {hasil} cm', delay=.06)
     return hasil
 
 def luas_lingkaran():
     print('(!)Rumus luas lingkaran = π x r x r')
     Input_user = int(input('Masukkan jari-jari lingkaran>> '))
     hasil = 3.14 * Input_user * Input_user
-    print('\n L.lingkaran = π x r x r')
-    print(f'           = 3.14 x {Input_user} x {Input_user}')
-    print(f'           = {hasil} cm²')
-    print(f'           = Jadi luas lingkaran adalah {hasil} cm²')
+    print('Menghitung.....')
+    time.sleep(1.3)
+    typing('\n L.lingkaran = π x r x r', delay=.06)
+    typing(f'             = {3.14} x {Input_user} x {Input_user}',delay=.06)
+    typing(f'             = {hasil} cm²', delay=.06)
+    typing(f'             = Jadi luas lingkaran adalah {hasil} cm²', delay=.06)
     return hasil
 
 def lingkaran():
@@ -117,21 +139,25 @@ def keliling_persegiPanjang():
     Input_user_panjang = int(input('Masukkan panjang persegi panjang>> '))
     Input_user_lebar = int(input('Masukkan lebar persegi panjang>> '))
     hasil = 2 * (Input_user_panjang + Input_user_lebar)
-    print('\n K.persegi panjang = 2 x (panjang + lebar)')
-    print(f'          = 2x ({Input_user_panjang} + {Input_user_lebar})')
-    print(f'          = {hasil} cm')
-    print(f'          = Jadi keliling persegi panjang adalah {hasil} cm')
+    print('Menghitung.....')
+    time.sleep(1.3)
+    typing('\n K.persegi panjang = 2 x (panjang + lebar)', delay=.06)
+    typing(f'                   = 2 x ({Input_user_panjang} + {Input_user_lebar})', delay=.06)
+    typing(f'                   = {hasil} cm',delay=.06)
+    typing(f'                   = Jadi keliling persegi panjang adalah {hasil} cm', delay=.06)
     return hasil
 
 def luas_pesegiPanjang():
     print('(!)Rumus luas persegi panjang = panjang x lebar')
     Input_user_panjang = int(input('Masukkan panjang persegi panjang>> '))
     Input_user_lebar = int(input('Masukkan lebar persegi panjang>> '))
-    hasil = Input_user_panjang + Input_user_lebar
-    print('\n L.persegi panjang = panjang x lebar')
-    print(f'          = {Input_user_panjang} * {Input_user_lebar}')
-    print(f'          = {hasil} cm²')
-    print(f'          = Jadi luas persegi panjang adalah {hasil} cm²')
+    hasil = Input_user_panjang * Input_user_lebar
+    print('Menghitung.....')
+    time.sleep(1.3)
+    typing('\n L.persegi panjang = panjang x lebar', delay=.06)
+    typing(f'                   = {Input_user_panjang} x {Input_user_lebar}',delay=.06)
+    typing(f'                   = {hasil} cm²', delay=.06)
+    typing(f'                   = Jadi luas persegi panjang adalah {hasil} cm²', delay=.06)
     return hasil
 
 def persegi_panjang():
@@ -158,20 +184,24 @@ def keliling_segitiga():
     Input_user_b = int(input('Masukkan b>> '))  
     Input_user_c = int(input('Masukkan c>> '))
     hasil = Input_user_a + Input_user_b + Input_user_c
-    print('\n K.segitiga = a + b + c')
-    print(f'           = {Input_user_a} + {Input_user_b} + {Input_user_c}')
-    print(f'           = {hasil} cm')
-    print(f'           = Jadi keliling segitiga adalah {hasil} cm')
+    print('Menghitung.....')
+    time.sleep(1.3)
+    typing('\n K.segitiga = a + b + c', delay=.06)
+    typing(f'            = {Input_user_a} + {Input_user_b} + {Input_user_c}', delay=.06)
+    typing(f'            = {hasil} cm',delay=.06)
+    typing(f'            = Jadi keliling segitiga adalah {hasil} cm', delay=.06)
     return hasil
 
 def luas_segitiga():
     print('(!)Rumus luas segitiga = 1/2 x a')
     Input_user_a = int(input('Masukkan a>>'))
     hasil = 1/2 * Input_user_a
-    print('\n L.persegi panjang = 1/2 x a')
-    print(f'           = 1/2 x {Input_user_a}')
-    print(f'           = {hasil} cm²')
-    print(f'           = Jadi luas segitiga adalah {hasil} cm²')
+    print('Menghitung.....')
+    time.sleep(1.3)
+    typing('\n L.segitiga = 1/2 x a', delay=.06)
+    typing(f'            = 1/2 x {Input_user_a}',delay=.06)
+    typing(f'            = {hasil} cm²', delay=.06)
+    typing(f'            = Jadi luas segitiga adalah {hasil} cm²', delay=.06)
     return hasil
 
 def segitiga():
@@ -197,10 +227,12 @@ def luas_limas_segitiga():
     Input_L_alas = int(input('Masukkan luas alas>> '))
     Input_L_sisi_tegak = int(input('Masukkan luas sisi tegak>> '))
     hasil = Input_L_alas + Input_L_sisi_tegak
-    print('\n L.limas segitiga = luas alas + jumlah luas sisi')
-    print(f'           = {Input_L_alas} + {Input_L_sisi_tegak}')
-    print(f'           = {hasil} cm²')
-    print(f'           = Jadi luas limas segitiga adalah {hasil} cm²')
+    print('Menghitung.....')
+    time.sleep(1.3)
+    typing('\n L.limas segitiga = luas alas + jumlah luas sisi tegak', delay=.06)
+    typing(f'                  = {Input_L_alas} + {Input_L_sisi_tegak}',delay=.06)
+    typing(f'                  = {hasil} cm²', delay=.06)
+    typing(f'                  = Jadi luas limas segitiga adalah {hasil} cm²', delay=.06)
     return hasil
 
 def volume_limas_segitiga():
@@ -208,10 +240,12 @@ def volume_limas_segitiga():
     Input_luas_alas = int(input('Masukkan luas alas>> '))
     Input_tinggi = int(input('Masukkan tinggi>> '))
     hasil = 1/3 * Input_luas_alas * Input_tinggi
-    print('\n V.limas segitiiga = 1/3 x luas alas x tinggi')
-    print(f'                   = 1/3 x {Input_luas_alas} x {Input_tinggi}')
-    print(f'                   = {hasil} cm³')
-    print(f'                   = Jadi volume limas segitiga adalah {hasil} cm³')
+    print('Menghitung.....')
+    time.sleep(1.3)
+    typing('\n V.limas segitiga = 1/3 x luas alas x tinggi', delay=.06)
+    typing(f'                  = 1/3 x {Input_luas_alas} x {Input_tinggi}', delay=.06)
+    typing(f'                  = {hasil} cm³',delay=.06)
+    typing(f'                  = Jadi volume limas segitiga adalah {hasil} cm³', delay=.06)
     return hasil
 
 def limas_segitiga():
@@ -227,7 +261,7 @@ def limas_segitiga():
     if Input_ussr == 1:
         luas_limas_segitiga()
     elif Input_ussr == 2:
-        luas_limas_segitiga()
+        volume_limas_segitiga()
     elif Input_ussr == 3:
         main()
     else:
@@ -239,10 +273,13 @@ def keliling_balok():
     Input_lebar = int(input('Masukkkan lebar>> '))
     Input_tinggi = int(input('Masukkan tinggi>> '))
     hasil = 4 * (Input_panjang + Input_lebar + Input_tinggi)
-    print('\n K.Balok = 4 x (p + l + t)')
-    print(f'                   = 4 x ({Input_panjang} + {Input_lebar} + {Input_tinggi})')
-    print(f'                   = {hasil} cm')
-    print(f'                   = Jadi keliling balok adalah {hasil} cm')
+    print('Menghitung.....')
+    time.sleep(1.3)
+    typing('\n K.balok = 4 x (panjang + lebar + tinggi)', delay=.06)
+    typing(f'         = 4 x {Input_panjang} + {Input_lebar} + {Input_tinggi}', delay=.06)
+    typing(f'         = {hasil} cm',delay=.06)
+    typing(f'         = Jadi keliling balok adalah {hasil} cm', delay=.06)
+    return hasil
 
 def luas_permukaan_balok():
     print('(!)Rumus luas balok = 2 x (panjang x lebar + panjang x tinggi + lebar x tinggi)')
@@ -250,10 +287,12 @@ def luas_permukaan_balok():
     Input_lebar = int(input('Masukkkan lebar>> '))
     Input_tinggi = int(input('Masukkan tinggi>> '))
     hasil = 2 * ((Input_panjang * Input_lebar) + (Input_panjang * Input_tinggi) + (Input_lebar * Input_tinggi))
-    print('\n L.Balok = 2 x (pl + pt + lt)')
-    print(f'                   = 2 * ({Input_panjang} x {Input_lebar} + {Input_panjang} x {Input_tinggi} + {Input_lebar} x {Input_tinggi})')
-    print(f'                   = {hasil} cm')
-    print(f'                   = Jadi luas permukaan balok adalah {hasil} cm²')
+    print('Menghitung.....')
+    time.sleep(1.3)
+    typing('\n L.permukaan balok = 2 x (panjang x lebar + panjang x tinggi + lebar x tinggi)', delay=.06)
+    typing(f'                   = 2 x ({Input_panjang} x {Input_lebar} + {Input_panjang} x {Input_tinggi} + {Input_lebar} x {Input_tinggi})',delay=.06)
+    typing(f'                   = {hasil} cm²', delay=.06)
+    typing(f'                   = Jadi luas permukaan balok adalah {hasil} cm²', delay=.06)
     return hasil
 
 def volume_balok():
@@ -262,10 +301,12 @@ def volume_balok():
     Input_lebar = int(input('Masukkkan lebar>> '))
     Input_tinggi = int(input('Masukkan tinggi>> '))
     hasil = Input_panjang * Input_lebar * Input_tinggi
-    print('\n V.Balok = p x l x t')
-    print(f'                   = {Input_panjang} x {Input_lebar} x {Input_tinggi}')
-    print(f'                   = {hasil} cm')
-    print(f'                   = Jadi volume balok adalah {hasil} cm³')
+    print('Menghitung.....')
+    time.sleep(1.3)
+    typing('\n V.balok = panjang x lebar x tinggi', delay=.06)
+    typing(f'         = {Input_panjang} x {Input_lebar} x {Input_tinggi}', delay=.06)
+    typing(f'         = {hasil} cm³',delay=.06)
+    typing(f'         = Jadi volume balok adalah {hasil} cm³', delay=.06)
     return hasil
 
 def balok():
@@ -303,6 +344,8 @@ def main():
         print('7.Balok')
         print('8.Keluar')
         inputUser = int(input('Masukkan pilihan anda>> '))
+        typing("Memproses.....", delay=.04)
+        time.sleep(2)
         
         match inputUser:
             case 1:
